@@ -1,8 +1,22 @@
 # some more ls aliases
-alias ll='ls -alF --color'
-alias la='ls -A --color'
-alias l='ls -CF --color'
+alias ll='ls -alF --color=auto'
+alias l='ls -CF --color=auto'
+alias la='ls -lathr'
+# alias la='exa -laghm@ --all --icons --git --color=always'
 
 #screen aliases
 alias cls='clear'
 
+# directories
+alias repos='cd $REPOS'
+
+# finds all files recursively and sorts by last modification, ignore hidden files
+alias lastmod='find . -type f -not -path "*/\.*" -exec ls -lrt {} +'
+
+# Azure
+alias sub='az account set -s'
+
+# Bluetooth
+
+# Airpods
+alias bta='bluetoothctl connect MAC ADDRESS HERE'
