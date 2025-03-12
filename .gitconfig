@@ -1,3 +1,10 @@
 [user]
 	name = Mark Darwin
 	email = mark@markdarwin.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBvpxXP6QektLIcfR2m5ragjqJ74JCWPzQWc4TPcB9vn
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /opt/1Password/op-ssh-sign
+[commit]
+	gpgsign = true
